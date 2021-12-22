@@ -1,7 +1,24 @@
 import "../../styles/App.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
+
+  function handleKeyDown(event) {
+    if (event.keyCode === 37) {
+      previousTestimonial();
+    }
+    if (event.keyCode === 39) {
+      nextTestimonial();
+    }
+  }
+
   const testimonials = [
     {
       picture: "image-tanya.jpg",
