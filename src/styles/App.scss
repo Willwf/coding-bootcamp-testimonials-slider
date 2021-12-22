@@ -42,10 +42,20 @@
 
     cursor: pointer;
 
+    transition: all 0.2s ease;
+
     img {
       width: 0.9rem;
       height: auto;
     }
+  }
+
+  .sliderBtn:hover {
+    background: rgb(243, 243, 243);
+  }
+
+  .sliderBtn:active {
+    background-color: rgb(126, 126, 126);
   }
 
   .sliderBtn:nth-of-type(1) {
