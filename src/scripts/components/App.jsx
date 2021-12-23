@@ -78,10 +78,10 @@ function App() {
             <img src={picture} alt={name + "'s picture"} />
             <div className="sliderButtons">
               <button className="sliderBtn" onClick={previousTestimonial}>
-                <img src="icons/icon-prev.svg" alt="Previous Slide" />
+                <img src="./icons/icon-prev.svg" alt="Previous Slide" />
               </button>
               <button className="sliderBtn" onClick={nextTestimonial}>
-                <img src="icons/icon-next.svg" alt="Next Slide" />
+                <img src="./icons/icon-next.svg" alt="Next Slide" />
               </button>
             </div>
           </div>
