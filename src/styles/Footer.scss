@@ -13,3 +13,9 @@ footer {
     font-weight: bold;
   }
 }
+
+@media (min-width: 768px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}

@@ -13,3 +13,27 @@ $grayish-blue: hsl(240, 18%, 77%);
 body {
   font-family: "Inter", sans-serif;
 }
+
+@media (orientation: landscape) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 82.5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    font-size: 110.5%;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    font-size: 155.5%;
+  }
+}

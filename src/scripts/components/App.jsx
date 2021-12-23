@@ -74,21 +74,25 @@ function App() {
     <main className="slider">
       <div className="imgSlider">
         <div className="userImg">
-          <img src={picture} alt={name + "'s picture"} />
-          <div className="sliderButtons">
-            <button className="sliderBtn" onClick={previousTestimonial}>
-              <img src="icons/icon-prev.svg" alt="Previous Slide" />
-            </button>
-            <button className="sliderBtn" onClick={nextTestimonial}>
-              <img src="icons/icon-next.svg" alt="Next Slide" />
-            </button>
+          <div>
+            <img src={picture} alt={name + "'s picture"} />
+            <div className="sliderButtons">
+              <button className="sliderBtn" onClick={previousTestimonial}>
+                <img src="icons/icon-prev.svg" alt="Previous Slide" />
+              </button>
+              <button className="sliderBtn" onClick={nextTestimonial}>
+                <img src="icons/icon-next.svg" alt="Next Slide" />
+              </button>
+            </div>
           </div>
         </div>
         <div className="testimonial">
           <article>
             <p>“ {testimonial} ”</p>
-            <h1>{name}</h1>
-            <h2>{role}</h2>
+            <div className="person">
+              <h1>{name}</h1>
+              <h2>{role}</h2>
+            </div>
           </article>
         </div>
       </div>
