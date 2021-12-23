@@ -29,13 +29,12 @@ Users should be able to:
 > Desktop Previews
 > ![](./public/screenshots/desktop-design-slide-1.png) ![](./public/screenshots/desktop-design-slide-2.png)
 
-> Mobile Previews
-> ![](./public/screenshots/mobile-design-slide-1.png) ![](./public/screenshots/mobile-design-slide-2.png)
+> Mobile Previews <br /> > ![](./public/screenshots/mobile-design-slide-1.png) ![](./public/screenshots/mobile-design-slide-2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Willwf/coding-bootcamp-testimonials-slider](https://github.com/Willwf/coding-bootcamp-testimonials-slider)
+- Live Site URL: [https://coding-bootcamp-testimonials-slider-nu-five.vercel.app/](https://coding-bootcamp-testimonials-slider-nu-five.vercel.app/)
 
 ## My process
 
