@@ -2,23 +2,6 @@ import "../../styles/App.scss";
 import { useEffect, useState } from "react";
 
 function App() {
-  useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  });
-
-  function handleKeyDown(event) {
-    if (event.keyCode === 37) {
-      previousTestimonial();
-    }
-    if (event.keyCode === 39) {
-      nextTestimonial();
-    }
-  }
-
   const testimonials = [
     {
       picture: "image-tanya.jpg",
@@ -43,14 +26,29 @@ function App() {
   const [role, setRole] = useState(testimonials[0].role);
   const [testimonial, setTestimonial] = useState(testimonials[0].testimonial);
 
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
+
+  function handleKeyDown(event) {
+    if (event.keyCode === 37) {
+      previousTestimonial();
+    }
+    if (event.keyCode === 39) {
+      nextTestimonial();
+    }
+  }
+
   function nextTestimonial() {
     if (Number(actualIndex) === testimonials.length - 1) {
       setActualIndex(actualIndex - (testimonials.length - 1));
     } else {
       setActualIndex(actualIndex + 1);
     }
-
-    setSlide(actualIndex);
   }
 
   function previousTestimonial() {
@@ -59,16 +57,14 @@ function App() {
     } else {
       setActualIndex(actualIndex - 1);
     }
-
-    setSlide(actualIndex);
   }
 
-  function setSlide(actualIndex) {
+  useEffect(() => {
     setPicture(testimonials[actualIndex].picture);
     setName(testimonials[actualIndex].name);
     setRole(testimonials[actualIndex].role);
     setTestimonial(testimonials[actualIndex].testimonial);
-  }
+  }, [actualIndex]);
 
   return (
     <main className="slider">
