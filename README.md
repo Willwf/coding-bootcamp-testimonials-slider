@@ -53,7 +53,8 @@ Users should be able to:
 
 I used this one to learn a lot of new things that I wasn't used to. I chose something that I thought was simples so I didn't become stuck in something too hard and difficult. It was challenging enough and I was finally able to pratice some concepts, despite struggling with simples things like hooks on React. There are parts of the code that I spend too much time to finish just searching for a way to do. I know that there's a lot of things to improve, but I finally reached a point that I'm feeling satisfied.
 
-I'm intrigued by something that I still couldn't figured it out. Why do I need to click twice on the slide buttons to change the slides? It must be something with the useState hook but I still haven't found an answer. But I will continue to search and when I learn I'll update here.
+I'm intrigued by something that I still couldn't figured it out. Why do I need to click twice on the slide buttons to change the slides? It must be something with the useState hook but I still haven't found an answer. But I will continue to search and when I learn I'll update here.  
+<strong>[UPDATE!]</strong> After some research I understood better the hook useEffect and could use it to change the states of the component. This way I could prevent the necessity of having to click twice on the button to trigger the change.
 
 ### Continued development
 
